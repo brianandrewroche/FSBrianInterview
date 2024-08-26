@@ -49,6 +49,15 @@ Check out a few sessions and explore the data to get a feel for how you'd use Fu
 - Use the [FullStory Browser SDK](https://github.com/fullstorydev/fullstory-browser-sdk) to easily load FullStory into your app or site. See `app.component.ts`.
 - Add `fs-exclude` CSS classes to prevent recording of sensitive or personal information. See `checkout.component.html` and [Private by Default](https://help.fullstory.com/hc/en-us/articles/360044349073-FullStory-Private-by-Default).
 
+# installs nvm (Node Version Manager)
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
+# download and install Node.js (you may need to restart the terminal)
+nvm install 16
+# verifies the right Node.js version is in the environment
+node -v # should print `v16.20.2`
+# verifies the right npm version is in the environment
+npm -v # should print `8.19.4`
+
 ## (Optional) Use the product catalog microservice
 
 By default all products are served from the Angular Shoppe itself.  You can optionally enable the products microservice, which will return the product catalog as an AJAX service call.  This allows you to record API requests and responses, see the article [How do I enable Ajax Whitelisting](https://help.fullstory.com/hc/en-us/articles/360020828393-How-do-I-enable-Ajax-Whitelisting-).
@@ -58,3 +67,4 @@ To enable the remote catalog:
 - Clone and start the [api-shoppe-demo](https://github.com/fullstorydev/api-shoppe-demo) app.
 - Update the `useMockApi` to be `false` in `environment.ts`.
 - Revisit the [home page](http://localhost:4200) or the [/products](http://localhost:4200/products) route.
+# FSBrianInterview
